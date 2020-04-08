@@ -82,9 +82,19 @@ class SavingsAccount extends Account {
 
 public class MyBank {
     public static void main(String st[]) {
+        Scanner scan = new Scanner(System.in);
+        int a, b;
+        float c;
+        String d, e;
 
+        System.out.println("enter acc_num, name, balance, password, rate");
+        a = scan.nextInt();
+        d = scan.next();
+        b = scan.nextInt();
+        e = scan.next();
+        c = scan.nextFloat();
         // read values, use Scanner class
-        SavingsAccount s1 = new SavingsAccount(111, "shadow", 600, "abcd", 0.005f);
+        SavingsAccount s1 = new SavingsAccount(a, d, b, e, c);
 
         // details of account
         System.out.println(s1.showAccount());
